@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "cucumber-js test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@cucumber/cucumber": "^8.5.1"
+    "@cucumber/cucumber": "^8.5.1",
+    "express": "^4.14.0"
   }
 }

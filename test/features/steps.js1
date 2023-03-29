@@ -1,0 +1,12 @@
+const assert = require('assert')
+const { When, Then } = require('@cucumber/cucumber')
+const app = require('../../src/app')
+
+When('the greeter says hello', function () {
+  this.whatIHeard = app.sayHello()
+});
+
+Then('I should have heard {string}', function (expectedResponse) {
+    console.log("---",expectedResponse)
+  assert.equal(this.whatIHeard, expectedResponse)
+});

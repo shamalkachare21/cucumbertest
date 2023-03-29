@@ -1,6 +1,6 @@
 const assert = require('assert')
 const { When, Then, Given } = require('@cucumber/cucumber')
-const app = require('../../src/app')
+const app = require('../..')
 
 
 //Given('the below users exists in the system', async function (table) {
