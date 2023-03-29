@@ -7,11 +7,17 @@ pipeline {
         
   stages {
    
+   stages {    
+    stage('Cloning Git') {
+      steps {
+        git 'https://github.com/shamalkachare21/cucumbertest.git'
+      }
+    }
+  } 
      
     stage('Build') {
       steps {
         sh 'npm install'
-         sh 'npm start'
       }
     }  
     
