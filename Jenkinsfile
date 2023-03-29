@@ -3,11 +3,7 @@ pipeline {
         
   stages {
         
-    stage('Git') {
-      steps {
-        git checkout 'https://github.com/shamalkachare21/cucumbertest'
-      }
-    }
+    
      
     stage('Build') {
       steps {
