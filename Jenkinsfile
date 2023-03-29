@@ -1,15 +1,11 @@
 pipeline {
   agent any
-    
-  tools {
-    nodejs 'nodejs'
-  }
         
   stages {
         
     stage('Git') {
       steps {
-        git 'https://github.com/shamalkachare21/cucumbertest'
+        git checkout 'https://github.com/shamalkachare21/cucumbertest'
       }
     }
      
